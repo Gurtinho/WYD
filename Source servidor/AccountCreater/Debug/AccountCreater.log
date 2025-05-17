@@ -1,1 +1,3 @@
-﻿
+﻿  AccountCreater.cpp
+C:\Users\gustt\source\repos\WYD\Source servidor\AccountCreater\AccountCreater.cpp(9,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+  AccountCreater.vcxproj -> C:\Users\gustt\source\repos\WYD\Source servidor\Debug\AccountCreater.exe

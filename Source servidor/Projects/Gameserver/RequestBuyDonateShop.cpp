@@ -21,7 +21,7 @@ bool CUser::RequestBuyDonateShop(PacketHeader *Header)
 	for (auto& category : donateStore.Categories)
 	{
 		auto itemInfoIt = std::find_if(std::begin(category.Items), std::end(category.Items), [p](const TOD_OverStore_ItemInfo& itemInfo) {
-			return memcmp(&itemInfo.Item, &p->Item, sizeof st_Item) == 0;
+			return memcmp(&itemInfo.Item, &p->Item, sizeof(st_Item)) == 0;
 		});
 
 		if (itemInfoIt != std::end(category.Items))

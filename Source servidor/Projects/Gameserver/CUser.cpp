@@ -447,7 +447,7 @@ std::tuple<bool, std::chrono::milliseconds> CUser::CheckIfIsTooFast(const st_Ite
 {
 	// Verifica na lista de itens recentes deletados se consta o mesmo
 	auto result = std::find_if(std::begin(Dropped.Items), std::end(Dropped.Items), [&](DroppedItem& droppedItem) {
-		return memcmp(&droppedItem.Item, item, sizeof st_Item) == 0 && droppedItem.SlotId == slotId;
+		return memcmp(&droppedItem.Item, item, sizeof(st_Item)) == 0 && droppedItem.SlotId == slotId;
 	});
 
 	if (result != std::end(Dropped.Items))
